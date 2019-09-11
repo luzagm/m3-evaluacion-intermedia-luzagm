@@ -4,9 +4,9 @@ import "../stylesheet/App.css";
 
 function App() {
   return (
-    <div>
+    <div className="cards-wrapper">
       <h1>Mi lista de Pokemon</h1>
-      <PokeList className="cards-wrapper" />
+      <PokeList className="cards" />
     </div>
   );
 }

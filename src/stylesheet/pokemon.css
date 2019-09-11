@@ -1,6 +1,5 @@
 .pokemon-card {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   margin: 15px;
   background-color: rgb(219, 238, 255);
   width: 200px;
@@ -10,7 +9,7 @@
 }
 
 .pokemon-image {
-  margin: 0 auto;
+  margin: 0 10px;
   height: 180px;
 }
 

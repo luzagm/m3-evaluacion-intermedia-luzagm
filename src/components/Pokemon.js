@@ -9,7 +9,11 @@ class Pokemon extends React.Component {
 
     return (
       <div className="pokemon-card">
-        <img src={`${this.props.pokemonImage}`} className="pokemon-image"></img>
+        <img
+          src={`${this.props.pokemonImage}`}
+          alt="pokemon"
+          className="pokemon-image"
+        ></img>
 
         <h2 className="pokemon-name">{this.props.pokemonName}</h2>
 
