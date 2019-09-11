@@ -1,11 +1,12 @@
 import React from "react";
-import "../stylesheet/App.css";
 import PokeList from "./PokeList";
+import "../stylesheet/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <PokeList />
+    <div>
+      <h1>Mi lista de Pokemon</h1>
+      <PokeList className="cards-wrapper" />
     </div>
   );
 }

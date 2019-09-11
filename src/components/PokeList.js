@@ -1,5 +1,6 @@
 import React from "react";
 import Pokemon from "./Pokemon";
+import "../stylesheet/pokemon.css";
 
 const pokemon = [
   {
@@ -91,11 +92,11 @@ class PokeList extends React.Component {
         <Pokemon
           pokemonImage={pokemonItem.url}
           pokemonName={pokemonItem.name}
-          pokemonPower={pokemonItem.types}
+          pokemonType={pokemonItem.types}
         />
       );
     });
-    return <div>{pokemonList}</div>;
+    return <div className="pokemon-wrapper">{pokemonList}</div>;
   }
 
   render() {
