@@ -20,6 +20,7 @@
 }
 
 .pokemon-name {
+  text-transform: capitalize;
   margin: 0;
   text-align: center;
   padding: 10px 0;
@@ -32,7 +33,10 @@
   display: flex;
   justify-content: left;
 }
+
 .pokemon-list-item {
+  color: white;
+ text-transform: uppercase;
   margin: 0 5px;
   text-align: center;
   list-style: none;

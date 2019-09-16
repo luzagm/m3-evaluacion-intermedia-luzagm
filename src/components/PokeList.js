@@ -4,9 +4,10 @@ import "../stylesheet/pokemon.css";
 
 class PokeList extends React.Component {
   render() {
-    let pokemonList = this.props.pokemons.map(pokemonItem => {
+    let pokemonList = this.props.pokemons.map((pokemonItem, id) => {
       return (
         <Pokemon
+          key={id}
           pokemonImage={pokemonItem.url}
           pokemonName={pokemonItem.name}
           pokemonType={pokemonItem.types}
