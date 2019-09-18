@@ -12,7 +12,7 @@ class App extends React.Component {
       filterPokemonByName: ""
     };
     this.getPokemons = this.getPokemons.bind(this);
-    this.filterByName = this.filterByName.bind(this);
+    this.filterPokemon = this.filterPokemon.bind(this);
     this.getPokemons();
   }
 
@@ -26,7 +26,7 @@ class App extends React.Component {
       );
   }
 
-  filterByName(ev) {
+  filterPokemon(ev) {
     this.setState({
       filterPokemonByName: ev.target.value
     });
@@ -45,7 +45,7 @@ class App extends React.Component {
         <h1>Mi lista de Pokemon</h1>
         <form>
           <label htmlFor="input-search">Buscar: </label>
-          <input id="input-search" type="text" onChange={this.ffilterByName} />
+          <input id="input-search" type="text" onChange={this.filterPokemon} />
         </form>
         <PokeList pokemons={filterName} />
       </div>
