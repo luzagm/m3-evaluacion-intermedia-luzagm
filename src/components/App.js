@@ -12,7 +12,7 @@ class App extends React.Component {
       filterPokemonByName: ""
     };
     this.getPokemons = this.getPokemons.bind(this);
-    this.filterPokemon = this.filterPokemon.bind(this);
+    this.filterByName = this.filterByName.bind(this);
     this.getPokemons();
   }
 
